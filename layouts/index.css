@@ -1,0 +1,76 @@
+@import url('common.css');
+.lower-footer{
+    margin: 0 auto;
+width: 207px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.main-nav{
+    list-style-type: none;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #444;
+}
+.main-nav a:hover{
+    /* text-decoration: underline; */
+    color: red;
+    border-bottom: 1px solid purple;
+    /* background: navy;*/
+    color: #FFF;
+}
+.main-nav li{
+    display: inline;
+    margin-left: 15px;
+    padding-right:15px;
+    border-right: 1px solid #000 ;
+}
+.main-nav li:hover{
+    background: navy;
+    color: #FFF;
+}
+.main-nav li.last-item{
+    /* margin-left: 0px; */
+    padding-right:0px;
+    border-right: none;
+}
+.footer-link{
+    width: 160px;
+    /* display: inline-block; */
+    margin-left:10px;
+
+}
+/* .footer{
+    background-color: black;
+} */
+.inner-footer{
+    display: flex;
+}
+footer.container{
+    background-color: black;
+}
+footer.container ul li a, footer.container a{
+    color: #fff;
+}
+.lower-footer{
+    color: #fff;
+}
+
+.product div{
+    display: inline-block;
+    width: 120px;
+}
+.product .right{
+    border: 1px solid green;
+    
+}
+.product .left{
+    border: 1px solid orange;
+    /* width: 230px; */
+    font-family: 'Roboto';
+}
+
+.left{
+    vertical-align: top;
+}

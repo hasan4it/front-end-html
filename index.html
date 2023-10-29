@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property hub |  Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <ul class="nav" title="main navigation">
-        <li><a href="index.html" title="home page of the website">Home</a></li>
+        <li><a href="index.html" title="home page">Home</a></li>
         <li><a href="aboutus.html" title="about us page">About us</a></li>
         <li><a href="services.html">services</a></li>
         <li>
@@ -18,6 +20,7 @@
                 <li class="" id=""><a href="#">product 2</a></li>
                 <li class="" id=""><a href="#">product 3</a></li>
                 <li class="" id=""><a href="#">product 4</a></li>
+                <li class="" id=""><a href="#">product 5</a></li>
             </ul>
         </li>
         <li><a href="#">Contact Us</a></li>
@@ -124,6 +127,45 @@
         </table>
     <!-- table example end -->
 
+    <p>
+        <b>       B tag Contrary to popular</b>> <i>i Tag belief, Lorem Ipsum</i> <br>is not simply random text. 
+        <u>U tag It has roots in a piece</u> of classical Latin literature from 45 BC, 
+        <strong>strong making it over 2000</strong> years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+        <em>em Lorem Ipsum comes from sections</em> 1.10.32 and 1.10.33 of 
+        <mark>mark "de Finibus Bonorum et Malorum"</mark> (The Extremes of Good and Evil)
+    </p>
+    <fieldset>
+        <legend>This is a title</legend>
+        <label for="">asdasdasd</label>
+        <p>
+            <b>       B tag Contrary to popular</b>> <i>i Tag belief, Lorem Ipsum</i> <br>is not simply random text. 
+            <u>U tag It has roots in a piece</u> of classical Latin literature from 45 BC, 
+            <strong>strong making it over 2000</strong> years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+            <em>em Lorem Ipsum comes from sections</em> 1.10.32 and 1.10.33 of 
+            <mark>mark "de Finibus Bonorum et Malorum"</mark> (The Extremes of Good and Evil)
+        </p>
+        <small>this is small tag</small>
+        <br>
+        H<sub>2</sub>O <br>
+        (a+b)<sup>2</sup> = a<sup>2</sup> + b <sup>2</sup> +2ab 
+        <br>
+        <ol>
+            <li>One</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ol>
+    </fieldset>
+<pre>
+    <p>
+        &lt;p&gt;  
+        <b>       B tag Contrary to popular</b>> <i>i Tag belief, Lorem Ipsum</i> <br>is not simply random text. 
+        <u>U tag It has roots in a piece</u> of classical Latin literature from 45 BC, 
+        <strong>strong making it over 2000</strong> years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+        <em>em Lorem Ipsum comes from sections</em> 1.10.32 and 1.10.33 of 
+        <mark>mark "de Finibus Bonorum et Malorum"</mark> (The Extremes of Good and Evil)
+    </p>
+    </pre>
     <div class="first" id="">
         <div class="second">
             <div class="last">
@@ -131,6 +173,55 @@
             </div> <!-- end of div last-->
         </div> <!-- end of second div-->
     </div> <!-- end of first div-->
+    <section class="html-form">
+        <form action="thankyou.html" method="get" name="" id="" class=""
+        autocomplete="on">
+            <h3>User information</h3>
+<label for="name">First Name <small>*</small></label>
+<input type="text" name="first_name" id="name" placeholder="full name" required
+autocomplete="off" tabindex="1">
+<hr>
+<label for="email">Email *</label>
+<input type="email" name="email" id="email" placeholder="test@domain.com" 
+required tabindex="3">
+<hr>
+<label for="">Last name</label>
+<input type="text" name="last_name" id="" tabindex="2">
+<hr>
+<label for="">Phone</label>
+<input type="number" name="number" id="" placeholder="03xxxxxxxxx"
+step="3" max="20" min="3">
+<hr>
+<label for="country">Country</label>
+<select name="country" id="country">
+    <option value="">Select Country</option>
+    <optgroup>
+<option value="">Asia</option>
+        <option value="PK">Pakistan</option>
+        <option value="srilanka">Sirilanka</option>
+        
+    </optgroup>
+    <optgroup>
+        <option value="">America</option>
+        <option value="CA">Canada</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+    </optgroup>
+    
+</select>
+<input type="hidden" name="code" value="1122">
+<hr>
+<label for="">Sugesstion</label>
+<textarea name="suggetion" id="" cols="30" rows="10" placeholder="sugeestion">you are welcome</textarea>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Clear" >
+<p>
+    * fields are required
+</p>
+        </form>
+        <code>This is a code <b>bold</b></code>
+    </section>
 <footer><span>Copy rights &copy;</span></footer>
 </body>
 </html>
