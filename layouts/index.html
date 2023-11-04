@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css?v=21">
+    <link rel="stylesheet" href="print.css" media="print">
     <!-- <link rel="stylesheet" href="common.css"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +15,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
+    /*
+     *{
+        background-color: gray;
+    } */
     .f{
         background: url(social_icons.png);
     width: 20px;
@@ -30,6 +36,37 @@
     border-radius: 50%;
     border: 1px solid #fff;
     }
+    .left{
+        background-color: red;
+    }
+    .mainP{
+        background: gray;
+    }
+    .nestedP{
+        color: orange;
+    }
+
+    .innerP{
+        color:red;
+    }
+
+    .mainP > div{
+        color:aquamarine;
+    }
+
+    .right:hover{
+        background: red;
+    }
+
+    .right:hover > .click{
+        display: block !important;
+    }
+
+    .click{
+        display: none !important;
+    }
+
+
 </style>
 </head>
 <body>
@@ -66,12 +103,44 @@
 
         </div>
         <div class="right">
-            For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.
-            For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.
-            For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.For timely delivery, flexibility, and 4x efficiency, help your team to maintain focus by managing work using our Kanban Boards.
+            For timely delivery, flexibility,
+            <div class="click"><a href="#">click me</a></div>
         </div>
-        
+
+        <div class="mainP">
+            For timely delivery, flexibility, and 4x efficiency,For timely delivery, flexibility, and 4x efficiency,For timely delivery, flexibility, and 4x efficiency,
+            <div class="innerP">
+                For timely delivery, flexibility, and 4x efficiency,
+
+                <div class="nestedP">For timely delivery, flexibility, and 4x efficiency,</div>
+            </div>
+            <div>
+                <blockquote> sdfsdfsdfsdfsdf</blockquote>
+              
+            </div>
+        </div>
+        <blockquote> sdfsdfsdfsdfsdf</blockquote>
+        <q> sdfsdfsdfsdfsdf</q>
+        <q> sdfsdfsdfsdfsdf</q>
     </section>
+
+    <section class="skills">
+        &nbsp;
+        <div class="skill-containter">
+            &nbsp;
+            <div class="filled">&nbsp;</div>
+        </div>
+    </section>
+    <style>
+        .skill-container{
+            border:1px solid red;
+            width: 100%;
+        }
+        .filled{
+            background: gray;
+            width: 50%;
+        }
+    </style>
     
 </div>
 
@@ -122,6 +191,11 @@
         Copyright &copy; All rights reserved
     </div>
 </footer>
-
+<style>
+      /* *{
+        background-color: gray;
+    } */
+</style>
+<!-- <link rel="stylesheet" href="reset.css"> -->
 </body>
 </html>
