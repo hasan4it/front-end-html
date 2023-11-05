@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="name"></h1> -->
+    <div class="containter">
+        <h3>Your initial information</h3>
+        <div>
+            welcome, <span id="name"></span>
+        </div>
+        <div>
+            <label for="">Age</label>
+            <span id="age"></span>
+        </div>
+        <div>
+            <label for="">Weight</label>
+            <span id="weight"></span>
+        </div>
+        <div>
+            <label for="">Height</label>
+            <span id="height"></span>
+        </div>
+
+        <h5>your result:</h5>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        // alert("");
+        var p = "Pakistan";
+        let p2 = "something";
+        const c = "EWX"; 
+        // alert(c);
+        // c = p2;
+        // console.log(c);
+    //    let a = document.getElementById('name');  // get the element reference
+    //    a.innerHTML= 'Hello';  //to update the inner html of a tag
+    //    a.outerHTML = '<h3>Hello</h3>';   // to replace the html element
+        // console.log(a);
+
+        document.write("hi I am here");
+
+       let name =  prompt('Enter your name:');
+       let age =  prompt('Enter your age:');
+       let weight =  prompt('Enter your weight: (kg)');
+       let height =  prompt('Enter your height: (feets)');
+
+       let n = document.getElementById('name');
+       let w = document.getElementById('weight');
+       let h = document.getElementById('height');
+       let a = document.getElementById('age');
+
+    //    debugger;
+       w.innerHTML = weight;
+       a.innerHTML = age;
+       h.innerHTML = height;
+       n.innerHTML = name;
+
+       console.log(age);
+
+    </script>
+</body>
+</html>
