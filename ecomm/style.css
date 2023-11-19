@@ -1,0 +1,10 @@
+.sidebar{
+    list-style: none;
+}
+.sidebar li a{
+    color: #000;
+}
+
+.sidebar li a.active{
+    color: red;
+}

@@ -10,14 +10,26 @@
     <h3 id="table"></h3>
     <script>
         let input = prompt('Enter number for table');
-        let ref = document.getElementById('table');
-        let txt = '';
-        for(let i = 1; i<= 10; i++)
-        {
-            txt += input+' x '+ i + ' = '+ input*i + '<br>'; 
+
+        if(input == ''){
+            alert('Empty input');
+            // break;
         }
 
-        ref.innerHTML = txt;
+        else if(!parseInt(input)){
+            alert('its not a number!');
+        }
+        else{
+            let ref = document.getElementById('table');
+            let txt = '';
+            for(let i = 1; i<= 10; i++)
+            {
+                txt += input+' x '+ i + ' = '+ input*i + '<br>'; 
+            }
+
+            ref.innerHTML = txt;
+        }
+       
 
     </script>
 </body>
