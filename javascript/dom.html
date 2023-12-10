@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <label for="">Value a: </label>
+        <span id="value1">4</span>
+        <br>
+        <label for="">value b: </label>
+        <span id="value2">5</span>
+        <br>
+        <label for="">Result: </label>
+        <span id="result">Result will be here</span>
+<br>
+<br>
+        <strong><span id="string">New string will be here</span></strong>
+        <button onclick="changeText();">Change text</button>
+    </div>
+    <script>
+        let a = document.getElementById('value1');
+        let b = document.getElementById('value2');
+        console.log(typeof parseInt(a.innerHTML));
+        document.getElementById('result').innerHTML = parseInt(a.innerHTML) + parseInt(b.innerHTML)
+        
+        function changeText(){
+            let a = document.getElementById('value1').innerHTML;
+            let b = document.getElementById('value2').innerHTML;
+            // document.getElementById('string').innerHTML = `Replaced 
+            // string 
+            // from 
+            // Javascript`;
+
+            document.getElementById('string').innerHTML = `you purchases ${a} and your bill will be ${b} `;
+        }
+    </script>
+</body>
+</html>

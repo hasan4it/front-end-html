@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeout</title>
+</head>
+<body>
+    <div>
+        <span>Date and time</span>
+        <span id="target"></span>
+    </div>
+    <script>
+        setInterval(function(){
+            let d = new Date();
+            let t = document.getElementById('target');
+            t.innerHTML = d
+            console.log(d);
+        }, 5000);
+
+        // setTimeout(function(){
+        //     let d = new Date();
+        //     let t = document.getElementById('target');
+        //     t.innerHTML = 'asdad';
+        // }, 1000);
+    </script>
+</body>
+</html>

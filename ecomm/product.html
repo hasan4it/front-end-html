@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Product Page</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
@@ -13,6 +13,95 @@
 
 </head>
 <body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Thank you!</h1>
+            <p>thanks for shopping here..</p>
+          </div>
+
+        <button type="button" class="btn btn-primary shadow" 
+        data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <button type="button" class="btn btn-primary" 
+        data-toggle="modal" data-target="#other">
+            Launch other modal
+        </button>
+
+        <div class="panel panel-danger">
+            <div class="panel-body">A Basic Panel</div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="panel-heading">asdasd</div>
+             <div class="panel-body">asdas</div>
+             <div class="panel-footer">dsfsdf</div>
+            
+            </div>
+
+    </div>
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Modal 1
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
+
+  <div class="modal fade" id="other" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          other modal
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .modal-dialog, .modal-content{
+        height:100%;
+    }
+    .modal.show .modal-dialog{
+        margin-right: 0px;
+        margin-top:0px;
+    }
+    .shadow{
+        box-shadow: 0px 1px 3px 1px rgb(57 57 56 / 63%) !important;
+    }
+  </style>
 </body>
 </html>
