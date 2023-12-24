@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial using loop</title>
+</head>
+<body>
+    
+
+ <script>
+    let number = 6;
+    let total = 1;
+    for(let i = number; i>0; i--){
+        total *= i;
+        // console.log();
+    }
+    // console.log(total);
+
+    r = factorial(number);
+console.log(r);
+
+function factorial(x){
+    // debugger;
+    console.log(x);
+     // if number is 0
+    if (x == 0) {
+        return 1;
+    }
+    
+
+    // if number is positive
+    else {
+        return x * factorial(x - 1);
+    }
+    
+}
+
+
+ </script>   
+</body>
+</html>

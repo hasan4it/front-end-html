@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <form action="">
+        <label for="province">Province</label>
+        <select name="province" id="province">
+            <option value="">Select provinces2</option>
+        </select>
+        <br>
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <div id="something"></div>
+    <script>
+// loop example
+let i = 1, y = 5;
+// for(i=1; i<100; i++); //inline looping
+        // for(; i<=10;){
+        //     console.log(i);
+        //     i++;
+        // }
+        // console.log('------');
+        // console.log(i);
+        // while(i<= 10 && y <= 10){
+        //     console.log(`y = `+y);
+        //     console.log(`x = ` +i);
+        //     i++;
+        //     y++;
+        // }
+
+        // do{
+        //     console.log(i);
+        //     i++;
+        // }while(i <= 10);
+
+        // let arr = [10,20,30,40,50,60, 70, 80, 90];
+        // console.info(arr[3]);   
+        // console.info(arr.length);
+        // let length = arr.length;   
+        // for(let i = 0; i<length; i++){
+        //     console.info(`x = ${i}, array = ${arr[i]}`);
+        // }
+
+        let provinces = [ 'Punjab', 'Sindh', 'KPK', 'Balochistan', 'AJK', 'GB'];
+        let txt = '';
+        let select = document.getElementById('province');
+
+        var opt = document.createElement('option');
+            // opt.value = provinces[i];
+            opt.innerHTML = 'Select province';
+            select.appendChild(opt);
+            
+        for(let i = 0; i< provinces.length; i++){
+            // txt += `<option>${provinces[i]}</option>`;
+            // console.log(provinces[i]);
+
+            var opt = document.createElement('option');
+            opt.value = provinces[i];
+            opt.innerHTML = provinces[i];
+            select.appendChild(opt);
+            // select.innerHTML(opt);
+        }
+        // console.log(txt);
+        // document.getElementById('province').appendChild(txt);
+        // document.getElementById('province').append(txt);
+        // let a = document.getElementById('province');
+        // console.log(a);
+
+        let opt2 = document.createElement('option');
+        opt2.value=123;
+        opt2.id ='option';
+        opt2.className ='option option2';
+        let b = document.getElementsByName('body');
+        // opt2.className ='option2';
+        b.innerHTML(opt2);
+        console.log(opt2);
+    </script>
+</body>
+</html>
