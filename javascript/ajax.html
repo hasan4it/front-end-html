@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Aynschrous Javascrip and XML
+
+    1. HTTP request
+    2. jQuery => ajax, post, get 
+    3. axios
+    4. fetch
+    5. React/angular vue, 
+    6. Alpine  -->
+
+<h4>Search products using AJAX</h4>
+    <br>
+    <input type="text" id="value" placeholder="Enter product id">
+    <button id="hit">Search</button>
+<div id="data"></div>
+<style>
+    .container{
+        text-transform: capitalize;
+    }
+    .info{
+        display: block;
+        width: 100%;
+    }
+    .text{
+        display: block;
+        width: 100%;
+    }
+    .thumbnail{
+        width: 100px;
+        height: auto;
+    }
+    .img{
+        width: 200px;
+        height: auto;
+        padding: 5px;
+    }
+</style>
+    <script>
+        // jQuery(document).ready();
+        // let j = jQuery.noConflict();
+
+        $(document).ready(function(){
+        //    let url = 'https://dummyjson.com/products?skip=60&limit=10'; 
+            let url = 'https://dummyjson.com/products/';
+
+            $("#hit").on('click', function(){
+                let v = $("#value").val();
+                console.log(v);
+                apiCall(v);
+            });
+
+
+            function apiCall(v){
+                $("#data").html('Please wait data loading...');
+            $.get(url+v)
+            .done(function(response){
+                $("#data").html('');
+                var pics = [];
+                for(let r in response){
+                    
+                    if(r == 'thumbnail')
+                    {
+                        let txt = `<span class="container">${r}: <a href="${response[r]}" target="_blank" class="info"><img src="${response[r]}" alt="thumbnail" width="60" height="60" class="thumbnail"></a></span><br>`;
+                        $("#data").append(txt);     
+                    }
+                    else if(r == 'images'){
+                        let p = response[r];
+                        for(t of p){
+                            // console.log(t);
+                            pics.push(`<img src="${t}" alt="img" width="90" height="90" class="img">`);
+                        }
+
+                        $("#data").append('<h5>images</h5>');
+                        $("#data").append(pics);
+                    }
+                    else{
+                        let txt = `<span class="container">${r}: <strong class="text">${response[r]}</strong></span><br>`;
+                        $("#data").append(txt);    
+                    }
+                    
+                }
+            
+            });
+        }
+        });
+    </script>
+</body>
+</html>

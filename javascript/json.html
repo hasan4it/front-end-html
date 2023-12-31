@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON: Javascript Object Notation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- xml => extensive markup language -->
+    <!-- JSON => Javascript object notation  -->
+
+    <!-- function builtin, user define functions
+    variables ( define $, let, var)
+    Loops (for, while, do while)
+    datatype (int, char, string, array, objects )
+    arrays (associative, index, JSON)
+    Classes OOP 
+    if else (conditional statements)
+    switch statements (conditional)
+    print statements (document.write)
+
+    with reference to php: file create, delete, database functions 
+
+    Language: PHP language server side, JS clients browser, -->
+ <div id="data"></div>
+
+    <script>
+        $(document).ready(function(){
+            //json example we consume JSON data
+            // let j = {"name":"Hasan", "age":30, "car":null};
+            // console.log(j.name);
+            // $("#data").html('<strong>'+j.name+'</strong>');
+
+            //make a json
+            let age = [30, 23, 40, 45];
+            let name = ['Asif', 'Kashif', 'Arif', 'Adil'];
+            var js = [];
+            let i = 0;
+            for(let a of age){
+                js.push({'age': a, 'name': name[i]});
+                // console.log(a);
+                i++;
+            }
+
+            console.log(js);
+
+            for(let g of js){
+                console.log(g.name);
+                console.log(g.age);
+                $("#data").append(`<div>Name: <b>${g.name}</b>, Age: <b>${g.age}</b></div>`);
+            }
+
+
+
+        });
+    </script>
+
+
+
+</body>
+</html>
