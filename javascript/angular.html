@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <div>
+    <p>Name : <input type="text" ng-model="name" ng-init="name='John'"></p>
+    <h1>Hello {{name}}</h1>
+</div>
+
+<div>
+    <p>Name: <input type="text" ng-model="name1"></p>
+    <p ng-bind="name1"></p>
+    <span>{{ 5 + 5 }}</span>
+</div>
+
+</body>
+</html>

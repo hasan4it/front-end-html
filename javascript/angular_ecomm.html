@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angualr ecommece</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <div  ng-init="quantity=1;price=5">
+
+        Quantity: <input type="number" ng-model="quantity">
+        Costs:    <input type="number" ng-model="price">
+        
+        Total in dollar: {{ quantity * price }}
+
+     </div>   
+
+     <div ng-init="names=['Punjab','Sindh','Balochistan', 'KPK']">
+        <ul>
+            <li ng-repeat="x in names">
+              {{ x }}
+            </li>
+          </ul>
+
+          <label for="">Provinces</label>
+        <select>
+            <option ng-repeat="x in names">{{ x}}</option>
+        </select>
+     </div>
+</body>
+</html>
